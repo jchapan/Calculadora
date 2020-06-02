@@ -7,19 +7,21 @@ var seguir
 var z
 var y
 var o
+var f
+var txt
 
 function addNum(x){
         if(Operacion==0){
                  Numero1 = `${Numero1}${x}`
                  console.log(Numero1)
                  z=parseInt(Numero1)
-                 var txt = document.getElementById('texto');
+                 txt = document.getElementById('texto');
                 txt.innerHTML = z;
         } else if(Operacion>0){
                  Numero2 =`${Numero2}${x}`
                  console.log(Numero2)
                  y=parseInt(Numero2)
-                 var txt = document.getElementById('texto');
+                 txt = document.getElementById('texto');
                  txt.innerHTML =`${z}${o}${y}`
            } 
  
@@ -29,25 +31,25 @@ function addNum(x){
 function suma(){
         Operacion=1
         o="+"
-        var txt = document.getElementById('texto');
+        txt = document.getElementById('texto');
         txt.innerHTML =`${z}${o}`
 }
 function resta(){
         Operacion=2
         o="-"
-        var txt = document.getElementById('texto');
+        txt = document.getElementById('texto');
         txt.innerHTML =`${z}${o}`
 }
 function multiplicacion(){
         Operacion=3
         o="x"
-        var txt = document.getElementById('texto');
+        txt = document.getElementById('texto');
         txt.innerHTML =`${z}${o}`
 }
 function division(){
         Operacion=4
         o="/"
-        var txt = document.getElementById('texto');
+        txt = document.getElementById('texto');
         txt.innerHTML =`${z}${o}`
 }
 function borrar(){
@@ -56,30 +58,34 @@ function borrar(){
         Numero1=0
         Numero2=0 
         Operacion=0
-        var txt = document.getElementById('texto');
+        txt = document.getElementById('texto');
         txt.innerHTML = Total;
 }
 function resultado(){
         if(Operacion==1){
                 Total = z + y
+                f = new Intl.NumberFormat("en-US").format(Total)
                 console.log(Total);
-                var txt = document.getElementById('texto');
-                txt.innerHTML = Total; 
+                txt = document.getElementById('texto');
+                txt.innerHTML = f; 
                 }else if(Operacion==2){
                         Total = z - y
+                        f = new Intl.NumberFormat("en-US").format(Total)
                         console.log(Total);
-                        var txt = document.getElementById('texto');
-                        txt.innerHTML = Total;  
+                        txt = document.getElementById('texto');
+                        txt.innerHTML = f;  
                         }else if(Operacion==3){
                                 Total = z * y
+                                f = new Intl.NumberFormat("en-US").format(Total)
                                 console.log(Total);
-                                var txt = document.getElementById('texto');
-                                txt.innerHTML = Total; 
+                                txt = document.getElementById('texto');
+                                txt.innerHTML = f; 
                                 }else if(Operacion==4){
                                         Total = z / y
+                                        f = new Intl.NumberFormat("en-US").format(Total)
                                         console.log(Total);
-                                        var txt = document.getElementById('texto');
-                                        txt.innerHTML = Total; 
+                                        txt = document.getElementById('texto');
+                                        txt.innerHTML = f; 
                                         }
 }
 

@@ -5,40 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- <p><input id="input" type="text"></p>s -->
-<div class="container">
-    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-        <div class="btn-group mr-2" role="group" aria-label="First group">
-            <button type="button" class="btn btn-secondary" onclick="addNum(0)">0</button>
-            <button type="button" class="btn btn-secondary" onclick="addNum(1)">1</button>
-            <button type="button" class="btn btn-secondary" onclick="addNum(2)">2</button>
-            <button type="button" class="btn btn-secondary" onclick="addNum(3)">3</button>
-            <button type="button" class="btn btn-secondary" onclick="addNum(4)">4</button>
-            <button type="button" class="btn btn-secondary" onclick="addNum(5)">5</button>
-            <button type="button" class="btn btn-secondary" onclick="addNum(6)">6</button>
-            <button type="button" class="btn btn-secondary" onclick="addNum(7)">7</button>
-            <button type="button" class="btn btn-secondary" onclick="addNum(8)">8</button>
-            <button type="button" class="btn btn-secondary" onclick="addNum(9)">9</button>
+<div class="container media">
+    <div class="form-row">
+        <div class="col-md-12 mb-3">
+            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-group mr-2" role="group" aria-label="First group">
+                    <button type="button" class="btn btn-secondary" onclick="addNum(0)">0</button>
+                    <button type="button" class="btn btn-secondary" onclick="addNum(1)">1</button>
+                    <button type="button" class="btn btn-secondary" onclick="addNum(2)">2</button>
+                    <button type="button" class="btn btn-secondary" onclick="addNum(3)">3</button>
+                    <button type="button" class="btn btn-secondary" onclick="addNum(4)">4</button>
+                    <button type="button" class="btn btn-secondary" onclick="addNum(5)">5</button>
+                    <button type="button" class="btn btn-secondary" onclick="addNum(6)">6</button>
+                    <button type="button" class="btn btn-secondary" onclick="addNum(7)">7</button>
+                    <button type="button" class="btn btn-secondary" onclick="addNum(8)">8</button>
+                    <button type="button" class="btn btn-secondary" onclick="addNum(9)">9</button>
+                </div>
+            </div>
         </div>
-    </div>
-    <br>
-    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-        <div class="btn-group mr-2 " role="group" aria-label="First group">
-            <button type="button" class="btn btn-secondary" onclick="suma()">+</button>
-            <button type="button" class="btn btn-secondary" onclick="resta()">-</button>
-            <button type="button" class="btn btn-secondary" onclick="multiplicacion()">x</button>
-            <button type="button" class="btn btn-secondary" onclick="division()">/</button>
-            <button type="button" class="btn btn-secondary" onclick="borrar()">C</button>
-            <button type="button" class="btn btn-secondary" onclick="resultado()">=</button>
+        
+        <div class="col-md-12 mb-3">
+            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-group mr-2 " role="group" aria-label="First group">
+                    <button type="button" class="btn btn-secondary" onclick="suma()">+</button>
+                    <button type="button" class="btn btn-secondary" onclick="resta()">-</button>
+                    <button type="button" class="btn btn-secondary" onclick="multiplicacion()">x</button>
+                    <button type="button" class="btn btn-secondary" onclick="division()">/</button>
+                    <button type="button" class="btn btn-secondary" onclick="borrar()">C</button>
+                    <button type="button" class="btn btn-secondary" onclick="resultado()">=</button>
+                </div>
+            </div>
         </div>
-    </div>
-<br>
-    <!-- <button onclick="resultado()">Click para Resultado</button> -->
-    <h1 id="texto"></h1>
 
+
+        <div class="col-md-6 mb-3">
+            <h1>Resultado</h1>
+            <h1 id="texto">0</h1>
+        </div>
+    </div>
 </div>
 </body>
     <script src="calculadora.js"> </script>
